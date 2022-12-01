@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Conversor de bases númericas</title>
+</head>
+<body>
+    <h1>Conversor de bases númericas</h1>
+    <div id="grade">
+        <div>
+            <h2>Base x para base 10</h2>
+            <form action="">
+                <select name="base" id="paraBase10">
+                    <option value="nulo">Base x</option>
+                    <option value="2">Base 2</option>
+                    <option value="3">Base 3</option>
+                    <option value="4">Base 4</option>
+                    <option value="5">Base 5</option>
+                    <option value="6">Base 6</option>
+                    <option value="7">Base 7</option>
+                    <option value="8">Base 8</option>
+                    <option value="9">Base 9</option>
+                    <option value="10">Base 10</option>
+                    <option value="11">Base 11</option>
+                    <option value="12">Base 12</option>
+                    <option value="13">Base 13</option>
+                    <option value="14">Base 14</option>
+                    <option value="15">Base 15</option>
+                    <option value="16">Base 16</option>
+                    <option value="17">Base 17</option>
+                    <option value="18">Base 18</option>
+                    <option value="19">Base 19</option>
+                    <option value="20">Base 20</option>
+                    <option value="21">Base 21</option>
+                    <option value="22">Base 22</option>
+                    <option value="23">Base 23</option>
+                    <option value="24">Base 24</option>
+                    <option value="25">Base 25</option>
+                    <option value="26">Base 26</option>
+                </select>
+                <input type="text" name="valor" id="valorParaBase10" placeholder="VALOR">
+                <button id="btnParaBase10">converter</button>
+                <h3>Resultado:</h3>
+            </form>
+        </div>
+
+        <div>
+            <h2>Base 10 para base y</h2>
+            <form action="">
+                <select name="base" id="daBase10">
+                    <option value="nulo">Base y</option>
+                    <option value="2">Base 2</option>
+                    <option value="3">Base 3</option>
+                    <option value="4">Base 4</option>
+                    <option value="5">Base 5</option>
+                    <option value="6">Base 6</option>
+                    <option value="7">Base 7</option>
+                    <option value="8">Base 8</option>
+                    <option value="9">Base 9</option>
+                    <option value="10">Base 10</option>
+                    <option value="11">Base 11</option>
+                    <option value="12">Base 12</option>
+                    <option value="13">Base 13</option>
+                    <option value="14">Base 14</option>
+                    <option value="15">Base 15</option>
+                    <option value="16">Base 16</option>
+                    <option value="17">Base 17</option>
+                    <option value="18">Base 18</option>
+                    <option value="19">Base 19</option>
+                    <option value="20">Base 20</option>
+                    <option value="21">Base 21</option>
+                    <option value="22">Base 22</option>
+                    <option value="23">Base 23</option>
+                    <option value="24">Base 24</option>
+                    <option value="25">Base 25</option>
+                    <option value="26">Base 26</option>
+                </select>
+                <input type="text" name="valor" id="valorDaBase10" placeholder="VALOR">
+                <button id="btnDaBase10">converter</button>
+                <h3>Resultado:</h3>
+            </form>
+        </div>
+
+        <div>
+            <h2>Base x para base y</h2>
+            <form action="">
+                <select name="base" id="daBaseInicial">
+                    <option value="nulo">Base x</option>
+                    <option value="2">Base 2</option>
+                    <option value="3">Base 3</option>
+                    <option value="4">Base 4</option>
+                    <option value="5">Base 5</option>
+                    <option value="6">Base 6</option>
+                    <option value="7">Base 7</option>
+                    <option value="8">Base 8</option>
+                    <option value="9">Base 9</option>
+                    <option value="10">Base 10</option>
+                    <option value="11">Base 11</option>
+                    <option value="12">Base 12</option>
+                    <option value="13">Base 13</option>
+                    <option value="14">Base 14</option>
+                    <option value="15">Base 15</option>
+                    <option value="16">Base 16</option>
+                    <option value="17">Base 17</option>
+                    <option value="18">Base 18</option>
+                    <option value="19">Base 19</option>
+                    <option value="20">Base 20</option>
+                    <option value="21">Base 21</option>
+                    <option value="22">Base 22</option>
+                    <option value="23">Base 23</option>
+                    <option value="24">Base 24</option>
+                    <option value="25">Base 25</option>
+                    <option value="26">Base 26</option>
+                </select>
+                <input type="text" name="valor" id="valorDaBaseInicial" placeholder="VALOR">
+                <select name="base" id="daBaseFinal">
+                    <option value="nulo">Base y</option>
+                    <option value="2">Base 2</option>
+                    <option value="3">Base 3</option>
+                    <option value="4">Base 4</option>
+                    <option value="5">Base 5</option>
+                    <option value="6">Base 6</option>
+                    <option value="7">Base 7</option>
+                    <option value="8">Base 8</option>
+                    <option value="9">Base 9</option>
+                    <option value="10">Base 10</option>
+                    <option value="11">Base 11</option>
+                    <option value="12">Base 12</option>
+                    <option value="13">Base 13</option>
+                    <option value="14">Base 14</option>
+                    <option value="15">Base 15</option>
+                    <option value="16">Base 16</option>
+                    <option value="17">Base 17</option>
+                    <option value="18">Base 18</option>
+                    <option value="19">Base 19</option>
+                    <option value="20">Base 20</option>
+                    <option value="21">Base 21</option>
+                    <option value="22">Base 22</option>
+                    <option value="23">Base 23</option>
+                    <option value="24">Base 24</option>
+                    <option value="25">Base 25</option>
+                    <option value="26">Base 26</option>
+                </select>
+                <button id="btnDasDuasBases">converter</button>
+                <h3>Resultado:</h3>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
