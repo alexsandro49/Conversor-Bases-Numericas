@@ -3,8 +3,8 @@ function converterParaBase10(x=0, y=0) {
         var base = Number(x)
         var valor = Number(y)
     } else {
-        var base = document.querySelector('#paraBase10').value
-        var valor = document.querySelector('#valorParaBase10').value
+        var base = Number(document.querySelector('#paraBase10').value)
+        var valor = Number(document.querySelector('#valorParaBase10').value)
     }
     
     let valorResultado = 0
@@ -14,7 +14,7 @@ function converterParaBase10(x=0, y=0) {
     if (base == 'nulo') {
         return 'Opção inválida'
 
-    } else if (Number(valor) == 0) {
+    } else if (valor == 0) {
         return 0
 
     } else {
@@ -22,7 +22,7 @@ function converterParaBase10(x=0, y=0) {
             lista.push(listaValor[i])
         }
         
-        if (Number(base) >= 11) {
+        if (base >= 11) {
             for(var i = 0; i < lista.length; i++) {
                 if(lista[i] == 'A' || lista[i] == 'a') {
                     lista[i] = 10
@@ -98,22 +98,20 @@ function converterDaBase10(x=0, y=0) {
         var base = Number(x)
         var valor = Number(y)
     } else {
-        var base = document.querySelector('#daBase10').value
-        var valor = document.querySelector('#valorDaBase10').value
+        var base = Number(document.querySelector('#daBase10').value)
+        var valor = Number(document.querySelector('#valorDaBase10').value)
     }
    
     let lista = []
-    valor = Number(valor)
     let valorResultado = ''
 
     if (base == 'nulo') {
         return 'Opção inválida'
 
-    } else if (Number(valor) == 0) {
+    } else if (valor == 0) {
         return 0
 
     } else {
-        base = Number(base)
         while (valor > 0) {
             if (valor % base > 0) {
                 lista.push(valor % base)
@@ -123,7 +121,6 @@ function converterDaBase10(x=0, y=0) {
             valor = parseInt(valor / base)
 
         }
-
         lista.reverse()
 
         if (base >= 11) {
@@ -186,7 +183,6 @@ function converterDaBase10(x=0, y=0) {
 
         for(var i = 0; i < lista.length; i++) {
             valorResultado += lista[i].toString()
-            
         }
 
         return valorResultado
