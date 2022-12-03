@@ -86,11 +86,12 @@ function converterParaBase10(x=0, y=0) {
             lista[i] = Number(lista[i]);
         }
 
-        let contador = 0
+        let contador = 0;
         for(var i = lista.length - 1; i >= 0; i--) {
             valorResultado += (lista[contador]) * base ** i;
             contador++;
         }
+
         return valorResultado;
     } 
 }
