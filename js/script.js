@@ -1,10 +1,10 @@
 function converterParaBase10(x=0, y=0) {
     if (x != 0 && y != 0) {
         var base = x;
-        var valor = Number(y);
+        var valor = y;
     } else {
         var base = document.querySelector('#paraBase10').value;
-        var valor = Number(document.querySelector('#valorParaBase10').value);
+        var valor = document.querySelector('#valorParaBase10').value;
     }
     
     let valorResultado = 0;
